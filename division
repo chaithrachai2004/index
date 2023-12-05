@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float dividend, divisor;
+
+    printf("Enter the dividend: ");
+    scanf("%f", &dividend);
+
+    printf("Enter the divisor: ");
+    scanf("%f", &divisor);
+  
+    if (divisor != 0) {
+        float result = dividend / divisor;
+        printf("Result of %.2f / %.2f = %.2f\n", dividend, divisor, result);
+    } else {
+       
+        printf("Error: Division by zero is undefined.\n");
+    }
+
+    return 0;
+}
