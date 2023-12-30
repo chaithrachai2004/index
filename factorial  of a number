@@ -1,0 +1,25 @@
+// find factorial of a number   
+factorial(n) {  
+    // Base case   
+    if n is less than 2:        // Factorial of 0, 1 is 1  
+     return n  
+  
+// Recursive step   
+return n * factorial(n-1);     // Factorial of 5 => 5 * Factorial(4)...  
+}  
+  
+/*   How function calls are made, 
+ 
+                    Factorial(5)            [ 120 ] 
+                        |                         
+                    5 * Factorial(4)        ==> 120  
+                        |    
+                    4. * Factorial(3)       ==> 24  
+                        | 
+                    3 * Factorial(2)        ==> 6 
+                        | 
+                    2 * Factorial(1)        ==> 2 
+                        | 
+                        1 
+ 
+*/  
